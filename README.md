@@ -1,6 +1,6 @@
-# Micro APP Plugin - Vue CLI
+# Micro APP Plugin - Vusion CLI
 
-[Plugin] adapter vue cli plugin.
+[Plugin] adapter vusion cli plugin.
 
 基于webpack多入口的多仓库业务模块开发的插件应用框架核心库.
 
@@ -9,25 +9,25 @@
 [![NPM Version][npm-img]][npm-url]
 [![NPM Download][download-img]][download-url]
 
-[Coverage-img]: https://coveralls.io/repos/github/MicrosApp/MicroApp-Plugin-Vue-CLI/badge.svg?branch=master
-[Coverage-url]: https://coveralls.io/github/MicrosApp/MicroApp-Plugin-Vue-CLI?branch=master
-[CircleCI-img]: https://circleci.com/gh/MicrosApp/MicroApp-Plugin-Vue-CLI/tree/master.svg?style=svg
-[CircleCI-url]: https://circleci.com/gh/MicrosApp/MicroApp-Plugin-Vue-CLI/tree/master
-[npm-img]: https://img.shields.io/npm/v/@micro-app/plugin-vue-cli.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/@micro-app/plugin-vue-cli
-[download-img]: https://img.shields.io/npm/dm/@micro-app/plugin-vue-cli.svg?style=flat-square
-[download-url]: https://npmjs.org/package/@micro-app/plugin-vue-cli
+[Coverage-img]: https://coveralls.io/repos/github/MicrosApp/MicroApp-Plugin-Vusion-CLI/badge.svg?branch=master
+[Coverage-url]: https://coveralls.io/github/MicrosApp/MicroApp-Plugin-Vusion-CLI?branch=master
+[CircleCI-img]: https://circleci.com/gh/MicrosApp/MicroApp-Plugin-Vusion-CLI/tree/master.svg?style=svg
+[CircleCI-url]: https://circleci.com/gh/MicrosApp/MicroApp-Plugin-Vusion-CLI/tree/master
+[npm-img]: https://img.shields.io/npm/v/@micro-app/plugin-vusion-cli.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/@micro-app/plugin-vusion-cli
+[download-img]: https://img.shields.io/npm/dm/@micro-app/plugin-vusion-cli.svg?style=flat-square
+[download-url]: https://npmjs.org/package/@micro-app/plugin-vusion-cli
 
 ## Install
 
 ```sh
-yarn add @micro-app/plugin-vue-cli
+yarn add @micro-app/plugin-vusion-cli
 ```
 
 or
 
 ```sh
-npm install -S @micro-app/plugin-vue-cli
+npm install -S @micro-app/plugin-vusion-cli
 ```
 
 ## Usage
@@ -39,7 +39,7 @@ module.exports = {
     // ...
 
     plugins: [ // 自定义插件
-        ['@micro-app/plugin-vue-cli', {
+        ['@micro-app/plugin-vusion-cli', {
             // root: 1,
         }],
     ],

@@ -2,20 +2,20 @@
 
 /* global expect */
 
-const MicroApp = require('@micro-app/core');
-const Service = MicroApp.Service;
+const MicroApp = require('@micro-app/cli/bin/base');
+const service = MicroApp.service;
 const path = require('path');
 
-describe('Plugin VueCLIAdapter', () => {
+describe('Plugin VusionCLIAdapter', () => {
 
     it('VueCLIAdapter', () => {
-        const service = new Service();
         service.registerPlugin({
-            id: 'test:VueCLIAdapter',
+            id: 'test:VusionCLIAdapter',
             link: path.join(__dirname, './index.js'),
         });
 
-        service.run('help', { _: [] });
+        service.run();
+        // service.run('serve', { _: [], t: 'vusion' });
 
         // expect(api.chainWebpack).not.toBeUndefined();
         // expect(api.chainWebpack).not.toBeNull();
