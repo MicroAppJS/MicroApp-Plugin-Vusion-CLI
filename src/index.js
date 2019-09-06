@@ -1,17 +1,16 @@
 'use strict';
 
-const tryRequire = require('try-require');
-
 module.exports = function VusionCLIAdapter(api, opts = {}) {
 
-    const registerVusionMethods = require('./vusionMethods');
+    // commands
+    require('./commands/version')(api);
 
     // vusion
-    registerVusionMethods(api);
+    require('./vusionMethods')(api);
 
-    api.modifyWebpackCompiler(config => {
+    api.modifyWebpackConfig(config => {
 
-        let { type, isDev, webpackConfig, devOptions, compiler } = config;
+        let { type, isDev, webpackConfig, devOptions } = config;
 
         if (type === 'vusion') {
             const vusionAdapter = require('./vusion')(webpackConfig, isDev, {
@@ -27,13 +26,8 @@ module.exports = function VusionCLIAdapter(api, opts = {}) {
             });
             webpackConfig = vusionAdapter.webpackConfig;
             devOptions = Object.assign({}, devOptions, vusionAdapter.devOptions || {}, opts.devOptions || {});
-
-            const webpack = tryRequire('webpack');
-            if (webpack) {
-                compiler = webpack(webpackConfig);
-            }
         }
 
-        return Object.assign(config, { compiler, devOptions, webpackConfig });
+        return Object.assign(config, { devOptions, webpackConfig });
     });
 };
