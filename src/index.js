@@ -1,9 +1,13 @@
 'use strict';
 
-const path = require('path');
 const tryRequire = require('try-require');
 
 module.exports = function VusionCLIAdapter(api, opts = {}) {
+
+    const registerVusionMethods = require('./vusionMethods');
+
+    // vusion
+    registerVusionMethods(api);
 
     api.modifyWebpackCompiler(config => {
 
