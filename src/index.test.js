@@ -2,13 +2,12 @@
 
 /* global expect */
 
-const MicroApp = require('@micro-app/cli/bin/base');
-const service = MicroApp.service;
 const path = require('path');
 
 describe('Plugin VusionCLIAdapter', () => {
 
     it('VueCLIAdapter', () => {
+        const { service } = require('@micro-app/cli/bin/base');
         service.registerPlugin({
             id: 'test:VusionCLIAdapter',
             link: path.join(__dirname, './index.js'),

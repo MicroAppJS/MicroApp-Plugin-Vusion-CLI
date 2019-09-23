@@ -384,25 +384,21 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
-"@micro-app/cli@0.1.1-rc.3":
-  version "0.1.1-rc.3"
-  resolved "https://registry.yarnpkg.com/@micro-app/cli/-/cli-0.1.1-rc.3.tgz#5f06a63d94018940ca30781275103f7863641153"
-  integrity sha512-pF7cbbNNO0fbYSgFNZHGUfxpZT1UaQkuUffZyuJ4KU0mLhJwtWakvmbmIq9pc3tXh3Jo7MzmtsuM4o3AEt3XKQ==
+"@micro-app/cli@0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@micro-app/cli/-/cli-0.1.3.tgz#09ad6dc6bd8f4acc016097a23ba6915f68f6370b"
+  integrity sha512-9GGybX02MwQyFDlRY99xEHy8NljFNdHGjyLAR/EeR+ZdwIwJpHFYRtDBNB4Luetc73QlcrhI4TsbhRl6DhNVkw==
   dependencies:
-    "@micro-app/core" "^0.1.1-rc.5"
     koa "^2.8.1"
-    koa-static "^5.0.0"
     opn "^5.5.0"
     shelljs "^0.8.3"
     update-notifier "^3.0.1"
-    webpack-dev-middleware "^2.0.6"
-    webpack-hot-middleware "^2.25.0"
     yargs-parser "^13.1.1"
 
-"@micro-app/core@0.1.0-beta.30":
-  version "0.1.0-beta.30"
-  resolved "https://registry.yarnpkg.com/@micro-app/core/-/core-0.1.0-beta.30.tgz#1d1f598f37436f6433dbb3794720e84ef7eb24a9"
-  integrity sha512-zQAaDKiLuRaG93ek5UqCL+kbn9XuWjnCD5OnuFv+Eq+/E70+uIMiDS/4L3BREH5qmEdoTm1HGv+wNjbZwvlvkA==
+"@micro-app/core@0.1.4-beta.1":
+  version "0.1.4-beta.1"
+  resolved "https://registry.yarnpkg.com/@micro-app/core/-/core-0.1.4-beta.1.tgz#44e412b35a40e7c5b48f9430aeddb698ff704690"
+  integrity sha512-UwKnLxlsPVDrf7/EUE/xIOx1o58sg3DDnTQAN8TW+M3J9Df6Iyl1pFFYmP7IVnrcrfJbemnlKKZfLObCM3ZJZw==
   dependencies:
     ajv "^6.10.2"
     ajv-keywords "^3.4.1"
@@ -414,29 +410,9 @@
     module-alias "^2.2.1"
     ora "^3.4.0"
     semver "^6.3.0"
+    semver-regex "^3.1.0"
     stream-to-string "^1.2.0"
     try-require "^1.2.1"
-    webpack-chain "^6.0.0"
-    webpack-merge "^4.2.2"
-
-"@micro-app/core@^0.1.1-rc.5":
-  version "0.1.1-rc.5"
-  resolved "https://registry.yarnpkg.com/@micro-app/core/-/core-0.1.1-rc.5.tgz#0a9167aca0b6583e62c7837950c228b6af2c82f7"
-  integrity sha512-p7cxoWpq/ji8qW3TFPiwJm1U8NHQ37fcChHLv0aQCVuQLYBvlSvhCSTY8wQPJRxr1J1vlopat+0h52I8w4HRZg==
-  dependencies:
-    ajv "^6.10.2"
-    ajv-keywords "^3.4.1"
-    assert "^2.0.0"
-    chalk "^2.4.2"
-    cheerio "^1.0.0-rc.3"
-    dotenv "^8.1.0"
-    lodash "^4.17.15"
-    module-alias "^2.2.1"
-    ora "^3.4.0"
-    semver "^6.3.0"
-    stream-to-string "^1.2.0"
-    try-require "^1.2.1"
-    webpack-chain "^6.0.0"
     webpack-merge "^4.2.2"
 
 "@sindresorhus/is@^0.14.0":
@@ -3880,11 +3856,6 @@ deep-is@~0.1.3:
   resolved "https://registry.yarnpkg.com/deep-is/-/deep-is-0.1.3.tgz#b369d6fb5dbc13eecf524f91b070feedc357cf34"
   integrity sha1-s2nW+128E+7PUk+RsHD+7cNXzzQ=
 
-deepmerge@^1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-1.5.2.tgz#10499d868844cdad4fee0842df8c7f6f0c95a753"
-  integrity sha512-95k0GDqvBjZavkuvzx/YqVLv/6YYa17fz6ILMSf7neqQITCPbnfEnQvEgMPNjH4kgobe7+WIL0yJEHku+H3qtQ==
-
 default-gateway@^2.6.0:
   version "2.7.2"
   resolved "https://registry.yarnpkg.com/default-gateway/-/default-gateway-2.7.2.tgz#b7ef339e5e024b045467af403d50348db4642d0f"
@@ -7018,11 +6989,6 @@ istanbul@^0.4.0:
     supports-color "^3.1.0"
     which "^1.1.1"
     wordwrap "^1.0.0"
-
-javascript-stringify@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/javascript-stringify/-/javascript-stringify-2.0.0.tgz#ef750216ae66504ffd670b68c8b8aa07bdf7b588"
-  integrity sha512-zzK8+ByrzvOL6N92hRewwUKL0wN0TOaIuUjX0Jj8lraxWvr5wHYs2YTjaj2lstF+8qMv5cmPPef47va8NT8lDw==
 
 jest-changed-files@^24.9.0:
   version "24.9.0"
@@ -11529,6 +11495,11 @@ semver-diff@^2.0.0:
   dependencies:
     semver "^5.0.3"
 
+semver-regex@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/semver-regex/-/semver-regex-3.1.0.tgz#23368cb577bf2668e78bf9c3e8e519fc029ca069"
+  integrity sha512-xJqZonbAohJmpogzq1Mx7DB4DT3LO+sG5J4i/rcRyZ527dcUqsTVb5T0vM5gwOBf3KO0v7i94EpbdvwSukJyAQ==
+
 "semver@2 || 3 || 4 || 5", semver@^5.0.3, semver@^5.1.0, semver@^5.3.0, semver@^5.4.1, semver@^5.5.0, semver@^5.5.1, semver@^5.6.0:
   version "5.7.1"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.7.1.tgz#a954f931aeba508d307bbf069eff0c01c96116f7"
@@ -13596,14 +13567,6 @@ webidl-conversions@^4.0.2:
   resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-4.0.2.tgz#a855980b1f0b6b359ba1d5d9fb39ae941faa63ad"
   integrity sha512-YQ+BmxuTgd6UXZW3+ICGfyqRyHXVlD5GtQr5+qjiNW7bF0cqrzX500HVXPBOvgXb5YnzDd+h0zqyv61KUD7+Sg==
 
-webpack-chain@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/webpack-chain/-/webpack-chain-6.0.0.tgz#9c36525a1271a54e7bfd1791199b395f400ae4f1"
-  integrity sha512-NK62XgJOOSmYs4kaXFIKKeClpuOVHY7m6e4XwxbVX/2HAUboH6xFCTVXMVv8+jB6K8o/UGjlo1Cv3XXOyNAAGw==
-  dependencies:
-    deepmerge "^1.5.2"
-    javascript-stringify "^2.0.0"
-
 webpack-dev-middleware@1.12.2:
   version "1.12.2"
   resolved "https://registry.yarnpkg.com/webpack-dev-middleware/-/webpack-dev-middleware-1.12.2.tgz#f8fc1120ce3b4fc5680ceecb43d777966b21105e"
@@ -13661,7 +13624,7 @@ webpack-dev-server@^2.9.7:
     webpack-dev-middleware "1.12.2"
     yargs "6.6.0"
 
-webpack-hot-middleware@^2.22.3, webpack-hot-middleware@^2.25.0:
+webpack-hot-middleware@^2.22.3:
   version "2.25.0"
   resolved "https://registry.yarnpkg.com/webpack-hot-middleware/-/webpack-hot-middleware-2.25.0.tgz#4528a0a63ec37f8f8ef565cf9e534d57d09fe706"
   integrity sha512-xs5dPOrGPCzuRXNi8F6rwhawWvQQkeli5Ro48PRuQh8pYPCPmNnltP9itiUPT4xI8oW+y0m59lyyeQk54s5VgA==
