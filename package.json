@@ -34,8 +34,8 @@
         "vusion-cli": "^0.7.17"
     },
     "devDependencies": {
-        "@micro-app/cli": "^0.1.4-beta.1",
-        "@micro-app/core": "^0.1.4-beta.1",
+        "@micro-app/cli": "^0.1.5",
+        "@micro-app/core": "^0.1.5",
         "@types/jest": "^24.0.18",
         "babel-eslint": "^10.0.3",
         "coveralls": "^3.0.6",
