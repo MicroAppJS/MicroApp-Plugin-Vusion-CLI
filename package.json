@@ -1,6 +1,6 @@
 {
     "name": "@micro-app/plugin-vusion-cli",
-    "version": "0.0.4",
+    "version": "0.1.0",
     "description": "[Plugin] adapter vusion cli plugin.",
     "main": "src/index.js",
     "scripts": {
@@ -29,20 +29,21 @@
     },
     "license": "MIT",
     "peerDependencies": {
-        "@micro-app/core": ">=0.1.5",
-        "@micro-app/cli": ">=0.1.5",
+        "@micro-app/cli": ">=0.2.0",
+        "@micro-app/core": ">=0.2.0",
+        "@micro-app/plugin-webpack-adapter": ">=0.1.0",
         "vusion-cli": "^0.7.17"
     },
     "devDependencies": {
-        "@micro-app/cli": "^0.1.5",
-        "@micro-app/core": "^0.1.5",
-        "@types/jest": "^24.0.18",
+        "@micro-app/cli": "^0.2.0",
+        "@micro-app/core": "^0.2.0",
+        "@micro-app/plugin-webpack-adapter": "^0.1.0",
+        "@types/jest": "^24.0.19",
         "babel-eslint": "^10.0.3",
-        "coveralls": "^3.0.6",
+        "coveralls": "^3.0.7",
         "eslint": "^5.16.0",
         "eslint-config-2o3t": "^1.1.17",
         "jest": "^24.9.0",
         "vusion-cli": "^0.7.17"
-    },
-    "dependencies": {}
+    }
 }

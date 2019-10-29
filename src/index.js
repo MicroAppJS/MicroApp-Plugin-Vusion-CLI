@@ -2,7 +2,7 @@
 
 module.exports = function VusionCLIAdapter(api, opts = {}) {
 
-    api.assertVersion('>=0.1.5');
+    api.assertVersion('>=0.2.0');
 
     // commands
     require('./commands/version')(api);
@@ -10,11 +10,11 @@ module.exports = function VusionCLIAdapter(api, opts = {}) {
     // vusion
     require('./vusionMethods')(api);
 
-    api.modifyWebpackConfig(config => {
+    api.modifyWebpackConfig(webpackConfig => {
 
-        let { args, webpackConfig } = config;
+        const args = api.parseArgv();
         const type = args.t || args.type;
-        const isDev = process.env.NODE_ENV !== 'production';
+        const isDev = api.mode === 'development';
 
         if (type === 'vusion') {
             const vusionAdapter = require('./vusion')(webpackConfig, isDev, {
@@ -32,7 +32,7 @@ module.exports = function VusionCLIAdapter(api, opts = {}) {
             webpackConfig.devServer = Object.assign(webpackConfig.devServer || {}, vusionAdapter.devOptions || {}, opts.devOptions || {});
         }
 
-        return Object.assign(config, { webpackConfig });
+        return webpackConfig;
     });
 };
 
