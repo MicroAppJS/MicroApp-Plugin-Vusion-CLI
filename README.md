@@ -9,10 +9,10 @@
 [![NPM Version][npm-img]][npm-url]
 [![NPM Download][download-img]][download-url]
 
-[Coverage-img]: https://coveralls.io/repos/github/MicrosApp/MicroApp-Plugin-Vusion-CLI/badge.svg?branch=master
-[Coverage-url]: https://coveralls.io/github/MicrosApp/MicroApp-Plugin-Vusion-CLI?branch=master
-[CircleCI-img]: https://circleci.com/gh/MicrosApp/MicroApp-Plugin-Vusion-CLI/tree/master.svg?style=svg
-[CircleCI-url]: https://circleci.com/gh/MicrosApp/MicroApp-Plugin-Vusion-CLI/tree/master
+[Coverage-img]: https://coveralls.io/repos/github/MicroAppJS/MicroApp-Plugin-Vusion-CLI/badge.svg?branch=master
+[Coverage-url]: https://coveralls.io/github/MicroAppJS/MicroApp-Plugin-Vusion-CLI?branch=master
+[CircleCI-img]: https://circleci.com/gh/MicroAppJS/MicroApp-Plugin-Vusion-CLI/tree/master.svg?style=svg
+[CircleCI-url]: https://circleci.com/gh/MicroAppJS/MicroApp-Plugin-Vusion-CLI/tree/master
 [npm-img]: https://img.shields.io/npm/v/@micro-app/plugin-vusion-cli.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/@micro-app/plugin-vusion-cli
 [download-img]: https://img.shields.io/npm/dm/@micro-app/plugin-vusion-cli.svg?style=flat-square

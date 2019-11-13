@@ -9,13 +9,13 @@
     "files": [
         "src"
     ],
-    "homepage": "https://github.com/MicrosApp/MicroApp-Plugin-Vusion-CLI",
+    "homepage": "https://github.com/MicroAppJS/MicroApp-Plugin-Vusion-CLI",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/MicrosApp/MicroApp-Plugin-Vusion-CLI.git"
+        "url": "git+https://github.com/MicroAppJS/MicroApp-Plugin-Vusion-CLI.git"
     },
     "bugs": {
-        "url": "https://github.com/MicrosApp/MicroApp-Plugin-Vusion-CLI/issues"
+        "url": "https://github.com/MicroAppJS/MicroApp-Plugin-Vusion-CLI/issues"
     },
     "keywords": [
         "micro",
